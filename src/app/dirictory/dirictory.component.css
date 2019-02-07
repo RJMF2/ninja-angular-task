@@ -1,0 +1,57 @@
+.ninja-name{
+    width: 250px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+.ninja-list{
+    list-style: none;
+}
+.ninja-list .single-ninja{
+    text-align: left;
+    padding: 25px 0;
+    border-bottom: 1px solid #222;
+}
+.ninja-list .single-ninja span{
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    color:rgb(236, 235, 235);
+    font-size: 18px;
+    margin-right: 20px;
+
+}
+.ninja-list .single-ninja h3{
+    display: inline-block;
+    color: rgb(44, 44, 44);
+}
+.add-ninja .ninja{
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-right:10px; 
+}
+.add-ninja button{
+    background: rgb(14, 153, 14);
+    border: 0;
+    border-radius: 10px;
+    color: #EEE;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    /* box-shadow: 1px 1px 5px gray; */
+    transition: all 0.3s ease-in-out;
+}
+.add-ninja button:hover{
+    box-shadow: 2px 2px 10px gray;
+
+}
+.add-ninja button:active{
+    background: rgb(48, 211, 48);
+}

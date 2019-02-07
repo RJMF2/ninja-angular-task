@@ -1,0 +1,19 @@
+<form>
+  <input name="term" class="ninja-name" [(ngModel)]="term" type="text" placeholder="Ninja Name">
+</form>
+  <ul class="ninja-list">
+    <li *ngFor="let ninja of ninjas | filter:term">
+      <div class="single-ninja">  
+        <span [ngStyle]="{background:ninja.color}">{{ninja.color | uppercase}}</span>
+        <h3>{{ninja.name}}</h3>
+        
+      </div>
+    </li>
+  </ul>
+  <form id="add-ninja" class="add-ninja">
+    <input class="ninja" type="text" name="name" [(ngModel)]="name" placeholder="Ninja Name">
+    <input class="ninja" type="text" name="color" [(ngModel)]="color" placeholder="Ninja Color">
+    <button (click) = "fbPostData(name , color)">Add Ninja</button>
+    <!-- <button (click)="fbDeleteData(name)">Delete All</button> -->
+  </form>
+
